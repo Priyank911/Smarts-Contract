@@ -1,0 +1,137 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_videoUrl",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_caption",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_tag",
+						"type": "string"
+					}
+				],
+				"name": "addVideo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getVideo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "videos",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "videoUrl",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "caption",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "tag",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"VideoContract.sol": "VideoContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"VideoContract.sol": {
+			"keccak256": "0x56ce6161ce7a663bb4e85b1b1a5445a8b7b6c76c9688a13316c3733d6101d82f",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://307e301ca472a26a1fbc331e6da902dc16351cc2c3d497c485f08491abc131e3",
+				"dweb:/ipfs/QmaKws5MbqxxpaCJQsbENL269DQ2E7s4bCHyfrroArkBic"
+			]
+		}
+	},
+	"version": 1
+}

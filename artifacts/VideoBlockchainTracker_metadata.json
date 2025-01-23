@@ -1,0 +1,196 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "uploader",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "videoHash",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "caption",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "tag",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "VideoUploaded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_uploader",
+						"type": "address"
+					}
+				],
+				"name": "getVideosByUploader",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "videoHash",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "caption",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "tag",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "uploader",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VideoBlockchainTracker.Video[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_videoHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_caption",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_tag",
+						"type": "string"
+					}
+				],
+				"name": "uploadVideo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "videos",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "videoHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "caption",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "tag",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "uploader",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"VideoUpload.sol": "VideoBlockchainTracker"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"VideoUpload.sol": {
+			"keccak256": "0xfbbaa6368d17822c094a9d90970285d5193937b6bdac88afebb0f263a16f4300",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://ac68ebcf4829fbb809b71793092ccf7c663e2704f360a9f4a4393cf0bd97c21b",
+				"dweb:/ipfs/QmZEHdAzt3eivKieuLXXsDWnrcCXHUZtTpzykqVUJQDyKK"
+			]
+		}
+	},
+	"version": 1
+}
